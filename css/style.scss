@@ -15,6 +15,7 @@ $width-container: 1140px;
     width: 100%;
     background: black;  
     &_container{
+        width: 100%;
         max-width: $width-container;
         min-height: 75px;
         display: flex;
@@ -272,6 +273,7 @@ svg{
     }
 }
 .categories{
+    width: 100%;
     max-width: $width-container;
     display: flex;
     justify-content: center;
@@ -334,6 +336,7 @@ svg{
 }
 .card_block{
     text-align: center;
+    width: 100%;
     max-width: $width-container;
     margin: 0 auto;
     display: flex;
@@ -344,6 +347,7 @@ svg{
     flex-wrap: wrap;
     &_product{
         text-align: center;
+        width: 100%;
         max-width: $width-container;
         margin: 0 auto;
         display: flex;
@@ -569,6 +573,7 @@ svg{
     }
 }
 .privilege{
+    width: 100%;
     max-width: 360px;
     display: flex;
     flex-direction: column;
@@ -616,6 +621,7 @@ svg{
     background-repeat: no-repeat;
     background-size:cover;
     &_container{
+        width: 100%;
         max-width: $width-container;
         display: flex;
         justify-content: space-between;
@@ -641,6 +647,7 @@ svg{
         max-width: 359.45px;
     }
     &_right_block{
+        width: 100%;
         max-width: 557px;
         min-height: 61px;
         margin-bottom: 32px;
@@ -715,6 +722,7 @@ svg{
     min-height: 79px;
     background-color: #222224;
     &_container{
+        width: 100%;
         max-width: $width-container;
         display: flex;
         justify-content: space-between;
@@ -774,6 +782,7 @@ svg{
     background-color: #F16D7F;
 }
 .title{
+    width: 100%;
     max-width: $width-container;
     min-height: 148px;
     display: flex;
@@ -837,6 +846,7 @@ svg{
     flex-wrap: wrap;
     position: relative;
     &_container{
+        width: 100%;
         max-width: $width-container;
         margin: 0 auto;
     }
@@ -1113,6 +1123,7 @@ svg{
     background-color: rgba(42, 42, 42, 0.15);
 }
 .description{
+    width: 100%;
     max-width: $width-container;
     margin: 0 auto;
     display: flex;
@@ -1155,6 +1166,7 @@ svg{
         margin-bottom: 48.41px;
     }
     &_text{
+        width: 100%;
         max-width: 555px;
         font-family: "Lato";
         font-style: normal;
@@ -1229,6 +1241,7 @@ svg{
     fill: #ef605b;
 }
 .cart{
+    width: 100%;
     max-width: $width-container;
     display: flex;
     justify-content: space-between;
@@ -1266,9 +1279,52 @@ svg{
                 color: #575757;
                 margin-bottom: 6px;
             }
-            
         }
     }
+    &_button{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 72.5px;
+        margin-bottom: 128.5px;
+    }
+}
+.quantity{
+    width: 44px;
+    height: 25px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    margin-left: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+}
+.cart_button a{
+    text-decoration: none;
+}
+.cart_button_btn{
+    display: block;
+    padding: 17px 40px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+}
+.cart_button_btn:hover{
+    background-color: #F16D7F;
+    color: white;
+    border: 1px solid white;
+}
+.cart_button_btn:active{
+    background-color: white;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
 }
 .cart_list img{
     width: 262px;

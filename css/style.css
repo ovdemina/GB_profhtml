@@ -18,6 +18,7 @@
 }
 
 .menu_container {
+  width: 100%;
   max-width: 1140px;
   min-height: 75px;
   display: -webkit-box;
@@ -349,6 +350,7 @@ svg {
 }
 
 .categories {
+  width: 100%;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +433,7 @@ svg {
 
 .card_block {
   text-align: center;
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   display: -webkit-box;
@@ -454,6 +457,7 @@ svg {
 
 .card_block_product {
   text-align: center;
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   display: -webkit-box;
@@ -764,6 +768,7 @@ svg {
 }
 
 .privilege {
+  width: 100%;
   max-width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -827,6 +832,7 @@ svg {
 }
 
 .subscribe_container {
+  width: 100%;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,6 +866,7 @@ svg {
 }
 
 .subscribe_right_block {
+  width: 100%;
   max-width: 557px;
   min-height: 61px;
   margin-bottom: 32px;
@@ -950,6 +957,7 @@ svg {
 }
 
 .copyright_container {
+  width: 100%;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,6 +1044,7 @@ svg {
 }
 
 .title {
+  width: 100%;
   max-width: 1140px;
   min-height: 148px;
   display: -webkit-box;
@@ -1123,6 +1132,7 @@ svg {
 }
 
 .filter_container {
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -1467,6 +1477,7 @@ svg {
 }
 
 .description {
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   display: -webkit-box;
@@ -1523,6 +1534,7 @@ svg {
 }
 
 .description_text {
+  width: 100%;
   max-width: 555px;
   font-family: "Lato";
   font-style: normal;
@@ -1621,6 +1633,7 @@ svg {
 }
 
 .cart {
+  width: 100%;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1677,6 +1690,60 @@ svg {
   line-height: 26px;
   color: #575757;
   margin-bottom: 6px;
+}
+
+.cart_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72.5px;
+  margin-bottom: 128.5px;
+}
+
+.quantity {
+  width: 44px;
+  height: 25px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  margin-left: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+}
+
+.cart_button a {
+  text-decoration: none;
+}
+
+.cart_button_btn {
+  display: block;
+  padding: 17px 40px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+}
+
+.cart_button_btn:hover {
+  background-color: #F16D7F;
+  color: white;
+  border: 1px solid white;
+}
+
+.cart_button_btn:active {
+  background-color: white;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 
 .cart_list img {
