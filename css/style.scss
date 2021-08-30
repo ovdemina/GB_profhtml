@@ -1114,21 +1114,17 @@ svg{
 }
 .description{
     max-width: $width-container;
-    min-height: 601px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 65 65;
-    margin-top: -60px;
+    padding-top: 64.54px; 
+    padding-bottom: 65px;
     box-sizing: border-box;
     margin-bottom: 129px;
     border: 1px solid #EAEAEA;
     background-color: #FFFFFF;
-    &_white{
-        display: block;
-        border: 30px solid #FFFFFF;
-    }
+    transform: translateY(-60px);
     &_title{
         display: block;
         font-family: "Lato";

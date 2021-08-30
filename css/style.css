@@ -1468,7 +1468,6 @@ svg {
 
 .description {
   max-width: 1140px;
-  min-height: 601px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1478,18 +1477,15 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 0 65 65;
-  margin-top: -60px;
+  padding-top: 64.54px;
+  padding-bottom: 65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 129px;
   border: 1px solid #EAEAEA;
   background-color: #FFFFFF;
-}
-
-.description_white {
-  display: block;
-  border: 30px solid #FFFFFF;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
 .description_title {
