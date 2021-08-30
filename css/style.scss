@@ -435,7 +435,7 @@ svg{
 .card_button_block>a{
     text-decoration: none;
 }
-.card_str{
+.pagination{
     margin-bottom: 96px;
     align-content: center;
     box-sizing: border-box;
@@ -445,46 +445,43 @@ svg{
     min-height: 43px;
     align-items: center;
     border: 1px solid #EBEBEB;
-    &_left{
+    list-style: none;
+    &_arrow{
         display: block;
-    }
-    &_right{
-        display: block;
+        text-decoration: none;
     }
 }
-.card_str_left svg{
+.pagination_arrow svg{
     width: 100%;
     height: 100%;
     fill: black;
 }
-.card_str_left:hover svg{
+.pagination_arrow:hover svg{
     fill: cornflowerblue;
 }
 
-.card_str_right svg{
+.pagination_arrow svg{
     width: 100%;
     height: 100%;
     fill: black;
 }
-.card_str_right:hover svg{
+.pagination_arrow:hover svg{
     fill: cornflowerblue;
 }
-.card_str_number>a{
-    text-decoration: none;
-}
-.card_str_number>a{
+.pagination_number{
     display: block;
     font-family: "Lato";
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: gray;
+    color:  #C4C4C4;
+    text-decoration: none;
 }
-.card_str_number_one>a{
+.pagination_number_one{
     color: #EF5B70;
 }
-.card_str_number:hover a{
+.pagination_number:hover{
     color: #EF5B70;
 }
 .card_button{
