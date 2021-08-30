@@ -797,19 +797,38 @@ svg{
         text-transform: uppercase;
     }
     &_right{
+        list-style: none;
         display: block;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-        text-transform: uppercase;
-        &_pink{
-            color: #F16D7F;
-        }
     }
 }
+.title_right li{
+    display: inline;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+.title_right li+li:before {
+    padding: 3px;
+    color: #636363;
+    content: "/\00a0";
+}
+.title_right li a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+.title_right li a:hover {
+    color: #F16D7F;
+    text-decoration: underline;
+  }
 .filter{
     max-width: 63%;
     min-height: 132px;

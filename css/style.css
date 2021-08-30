@@ -1071,18 +1071,40 @@ svg {
 }
 
 .title_right {
+  list-style: none;
   display: block;
+}
+
+.title_right li {
+  display: inline;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.title_right li + li:before {
+  padding: 3px;
+  color: #636363;
+  content: "/\00a0";
+}
+
+.title_right li a {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #636363;
-  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.title_right_pink {
+.title_right li a:hover {
   color: #F16D7F;
+  text-decoration: underline;
 }
 
 .filter {
