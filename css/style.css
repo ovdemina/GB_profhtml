@@ -2055,6 +2055,133 @@ svg {
   display: block;
 }
 
+.registration_form_text {
+  display: block;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.registration_form_input {
+  display: block;
+  width: 360px;
+  margin-bottom: 20px;
+  padding: 13px 0 16px 17px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.registration_form_submit {
+  display: block;
+  width: 167px;
+  padding: 16px 29px 17px 29px;
+  background-color: #F16D7F;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: 1px solid #F16D7F;
+  text-transform: uppercase;
+}
+
+.registration_form_note {
+  max-width: 360px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: -5px;
+  margin-bottom: 39px;
+}
+
+.registration_form_radio {
+  margin-top: 31px;
+  margin-bottom: 33px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration_form_input::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_form_input::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_form_input::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_form_input:-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_form_input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_form_radio input {
+  margin-right: 10px;
+}
+
+.registration_form_radio label {
+  margin-right: 20px;
+}
+
+.registration_form_submit:hover {
+  color: #4A4A4A;
+  background-color: transparent;
+  border: 1px solid #4A4A4A;
+}
+
+.registration_form_submit:active {
+  color: #4A4A4A;
+  background-color: #F16D7F;
+  border: 1px solid #4A4A4A;
+}
+
 .registration_article {
   max-width: 652px;
 }
