@@ -2036,4 +2036,63 @@ svg {
 .cart_right_checkout a {
   text-decoration: none;
 }
+
+.registration_container {
+  margin: 0 auto;
+  margin-top: 64px;
+  width: 100%;
+  max-width: 1140px;
+  margin-bottom: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration_form {
+  display: block;
+}
+
+.registration_article {
+  max-width: 652px;
+}
+
+.registration_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.registration_subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 22px;
+  margin-bottom: 21px;
+}
+
+.registration_list {
+  list-style-image: url(../img/galka.svg);
+  margin-left: 23px;
+}
+
+.registration_list li {
+  margin-bottom: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-left: 23px;
+}
 /*# sourceMappingURL=style.css.map */
