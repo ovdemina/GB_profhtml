@@ -1364,7 +1364,8 @@ fill: #F16D7F;
             text-transform: uppercase;
             margin-bottom: 20px;
         }
-        &_input{
+        &_input1{
+            display: block;
             width: 360px;
             border: 1px solid #A4A4A4;
             padding: 13px 0 16px 17.24px;
@@ -1374,10 +1375,44 @@ fill: #F16D7F;
             font-size: 13px;
             line-height: 16px;
             color: black;
-            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        &_input{
+            width: 360px;
+            border: 1px solid #A4A4A4;
+            padding: 12px 0 16px 17px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: black;
+            box-sizing: border-box;
+            position: absolute;
+            z-index: -1;
+            left: -17.24px;
+            top: -13px;
+            &_state{
+                padding: 12px 0 16px 60px;
+            }
+            &_postcode{
+                padding: 12px 0 16px 110px;
+            }
+        }
+        &_label{
+            position: relative;
+            margin-top: 33.5px;
+            margin-bottom: 15.5px;
+            left: 17.24px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #222222;
         }
         &_button{
-            margin-top: 4px;
+            margin-top: 25px;
             padding: 10px 14.2px 12px 15.21px;
             font-family: "Lato";
             font-style: normal;
@@ -1387,8 +1422,59 @@ fill: #F16D7F;
             color: #4A4A4A;
             text-transform: uppercase;
             border: 1px solid #A4A4A4;
+            box-sizing: border-box;
         }
     }
+}
+.cart_right_form_input1::-webkit-input-placeholder {
+    color:#B1B1B1;
+}
+.cart_right_form_input1::-webkit-input-placeholder {
+    color:#B1B1B1;
+}
+.cart_right_form_input1::-moz-placeholder {
+    color:#B1B1B1;
+}
+.cart_right_form_input1:-moz-placeholder {
+    color:#B1B1B1;
+}
+.cart_right_form_input1:-ms-input-placeholder {
+    color:#B1B1B1;
+}
+.quantity::-webkit-input-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    text-align: center;
+}
+.quantity::-webkit-input-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    text-align: center;
+}
+.quantity::-moz-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    text-align: center;
+}
+.quantity:-moz-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    text-align: center;
+}
+.quantity:-ms-input-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    text-align: center;
 }
 .cart_right_form_button:hover{
     background-color: #F16D7F;
@@ -1399,6 +1485,14 @@ fill: #F16D7F;
     background-color: white;
     color: #F16D7F;
     border: 1px solid #F16D7F;
+}
+.cart_right_form_input:focus{
+    outline: none;
+    border: 2px solid #F16D7F;
+}
+.cart_right_form_input1:focus{
+    outline: none;
+    border: 2px solid #F16D7F;
 }
 .cart_right_checkout{
     display: block;
@@ -1417,6 +1511,7 @@ fill: #F16D7F;
     line-height: 13px;
     color: #4A4A4A;
     text-align: right;
+    text-transform: uppercase;
 }
 .cart_right_checkout_sum2{
     display: block;
@@ -1428,6 +1523,7 @@ fill: #F16D7F;
     line-height: 19px;
     color: #222222;
     text-align: right;
+    text-transform: uppercase;
 }
 .cart_right_checkout_line{
     margin: 0 auto;
@@ -1451,6 +1547,17 @@ fill: #F16D7F;
     text-align: right;
     text-transform: uppercase;
     background-color: #F16D7F;
+    box-sizing: border-box;
+}
+.cart_right_checkout_button:hover {
+    color: #4A4A4A;
+    background-color:  transparent;
+    border: 1px solid #4A4A4A;
+}
+.cart_right_checkout_button:active {
+    color: #4A4A4A;
+    background-color: #F16D7F;
+    border: 1px solid #4A4A4A;
 }
 .space{
     padding-left: 20px;
