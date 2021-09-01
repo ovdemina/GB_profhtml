@@ -2082,7 +2082,7 @@ svg {
 .registration_form_submit {
   display: block;
   width: 167px;
-  padding: 16px 29px 17px 29px;
+  padding: 16px 0 17px 0;
   background-color: #F16D7F;
   font-family: "Lato";
   font-style: normal;
@@ -2180,6 +2180,21 @@ svg {
   color: #4A4A4A;
   background-color: #F16D7F;
   border: 1px solid #4A4A4A;
+}
+
+.registration_form_icon {
+  width: 17px;
+  height: 10px;
+  fill: #FFFFFF;
+  margin-left: 20px;
+}
+
+.registration_form_submit:hover .registration_form_icon {
+  fill: #4A4A4A;
+}
+
+.registration_form_submit:active .registration_form_icon {
+  fill: #4A4A4A;
 }
 
 .registration_article {
