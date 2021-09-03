@@ -14,12 +14,17 @@
 .menu {
   min-height: 75px;
   width: 100%;
+  padding: 0 32px 0 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: black;
 }
 
 .menu_container {
   width: 100%;
   max-width: 1140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,7 +322,7 @@ svg {
 .banner_text {
   font-style: normal;
   padding-top: 290px;
-  padding-left: 91px;
+  padding-left: 88px;
   font-family: "Lato";
 }
 
@@ -486,7 +491,8 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   margin-bottom: 48.5px;
 }
 
@@ -2249,7 +2255,7 @@ svg {
 
 @media (max-width: 768px) {
   .menu_container {
-    max-width: 92%;
+    max-width: 768px;
   }
   .banner {
     height: 367.57px;
@@ -2265,27 +2271,38 @@ svg {
   }
   .banner_text {
     padding-top: 138px;
+    padding-left: 67px;
   }
   .banner_text::before {
     top: 138px;
+    left: 45px;
   }
   .categories {
-    max-width: 735px;
+    max-width: 768px;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .categories_box {
-    width: 232px;
+    width: 100%;
+    max-width: 230px;
     min-height: 168px;
-    margin: 0 19px 19px 0;
+    margin: 0 18px 18px 0;
   }
   .categories_box:nth-child(3) {
-    margin: 0 0 19px 0;
+    margin: 0 0 18px 0;
   }
   .categories_box:last-child {
-    width: 735px;
+    width: 100%;
+    min-height: 116px;
+    max-width: 768px;
     margin: 0 0 155px;
   }
   .card_block {
-    max-width: 735px;
+    max-width: 768px;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .card {
     margin-bottom: 15px;
@@ -2295,7 +2312,7 @@ svg {
     margin-bottom: 65px;
   }
   .privileges_container {
-    max-width: 735px;
+    max-width: 768px;
     margin-bottom: 64px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2307,11 +2324,14 @@ svg {
   }
   .subscribe_container {
     width: 100%;
-    max-width: 735px;
+    max-width: 768px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .subscribe {
+    background-position: 23%;
   }
   .subscribe_left_avatar {
     margin-top: 54px;
@@ -2324,15 +2344,18 @@ svg {
   }
   .copyright_container {
     width: 100%;
-    max-width: 735px;
+    max-width: 768px;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .title {
     width: 100%;
-    max-width: 735px;
+    max-width: 768px;
   }
   .filter {
     max-width: 100%;
-    max-width: 735px;
+    max-width: 768px;
     margin: 0 auto;
     min-height: 81px;
     display: -webkit-box;
@@ -2356,7 +2379,7 @@ svg {
 
 @media (max-width: 375px) {
   .menu_container {
-    max-width: 343px;
+    max-width: 375px;
   }
   .banner_left {
     width: 0%;
@@ -2385,16 +2408,23 @@ svg {
   }
   .banner_text {
     padding-top: 148px;
+    left: 83px;
   }
   .banner_text::before {
-    top: 150px;
+    top: 155px;
     height: 61px;
   }
   .categories {
-    max-width: 343px;
+    width: 100%;
+    max-width: 375px;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
   }
   .categories_box {
-    width: 343px;
+    width: 100%;
+    max-width: 375px;
     min-height: 247px;
     margin: 0 0 32px 0;
   }
@@ -2402,11 +2432,16 @@ svg {
     margin: 0 0 32px 0;
   }
   .categories_box:last-child {
-    width: 343px;
+    min-height: 111px;
+    width: 100%;
+    max-width: 375px;
     margin: 0 0 64px;
   }
   .card_block {
-    max-width: 343px;
+    max-width: 375px;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .card {
     margin-bottom: 16.61px;
@@ -2417,7 +2452,7 @@ svg {
   }
   .privileges_container {
     width: 100%;
-    max-width: 343px;
+    max-width: 375px;
     margin-bottom: 81px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2428,7 +2463,7 @@ svg {
     margin: 48px 0 0 0;
   }
   .subscribe_container {
-    max-width: 343px;
+    max-width: 375px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2444,7 +2479,7 @@ svg {
     margin-bottom: 110px;
   }
   .copyright_container {
-    max-width: 343px;
+    max-width: 375px;
     padding-top: 43px;
     padding-bottom: 9px;
   }
@@ -2462,7 +2497,7 @@ svg {
   }
   .title {
     width: 100%;
-    max-width: 343px;
+    max-width: 375px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2476,7 +2511,7 @@ svg {
   }
   .filter {
     max-width: 100%;
-    max-width: 343px;
+    max-width: 375px;
     margin: 0 auto;
     min-height: 81px;
     display: -webkit-box;

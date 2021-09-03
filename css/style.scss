@@ -1,6 +1,6 @@
 $width-container: 1140px;
-$width-tablet: 735px;
-$width-tel: 343px;
+$width-tablet: 768px;
+$width-tel: 375px;
 
 * {
     margin: 0;
@@ -15,10 +15,13 @@ $width-tel: 343px;
 .menu{
     min-height: 75px;
     width: 100%;
+    padding: 0 32px 0 32px;
+    box-sizing: border-box;
     background: black;  
     &_container{
         width: 100%;
         max-width: $width-container;
+        box-sizing: border-box;
         min-height: 75px;
         display: flex;
         justify-content: space-between;
@@ -247,7 +250,7 @@ svg{
 .banner_text{
     font-style: normal;
     padding-top: 290px;
-    padding-left: 91px;
+    padding-left: 88px;
     font-family: "Lato";
 }
 .banner_text::before{
@@ -365,7 +368,8 @@ svg{
 .card{
     display: flex;
     flex-direction: column;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin-bottom: 48.5px;
     &_box{
         max-width: 100%;
@@ -1750,7 +1754,7 @@ fill: #F16D7F;
 }
 @media (max-width: 768px){
     .menu_container {
-        max-width: 92%;
+        max-width: $width-tablet;
     }
     .banner{
         height: 367.57px;
@@ -1765,28 +1769,37 @@ fill: #F16D7F;
         }
         &_text{
             padding-top: 138px;
+            padding-left: 67px;
         }
     }
     .banner_text::before {
         top: 138px;
+        left: 45px;
     }
     .categories {
         max-width: $width-tablet;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
     .categories_box {
-        width: 232px;
+        width: 100%;
+        max-width: 230px;
         min-height: 168px;
-        margin: 0 19px 19px 0;
+        margin: 0 18px 18px 0;
     }
     .categories_box:nth-child(3){
-        margin: 0 0 19px 0;
+        margin: 0 0 18px 0;
     }
     .categories_box:last-child{
-        width: $width-tablet;
+        width: 100%;
+        min-height: 116px;
+        max-width: $width-tablet;
         margin: 0 0 155px;
     }
     .card_block {
         max-width: $width-tablet;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
     .card{
         margin-bottom: 15px;
@@ -1808,6 +1821,9 @@ fill: #F16D7F;
         max-width: $width-tablet;
         flex-direction: column;
     }
+    .subscribe{
+        background-position: 23%;
+    }
     .subscribe_left_avatar{
         margin-top: 54px;
     }
@@ -1820,6 +1836,8 @@ fill: #F16D7F;
     .copyright_container {
         width: 100%;
         max-width: $width-tablet;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
     .title {
         width: 100%;
@@ -1879,17 +1897,23 @@ fill: #F16D7F;
         }
         &_text{
             padding-top: 148px;
+            left: 83px;
         }
     }
     .banner_text::before {
-        top: 150px;
+        top: 155px;
         height: 61px;
     }
     .categories {
+        width: 100%;
         max-width: $width-tel;
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
     .categories_box {
-        width: $width-tel;
+        width: 100%;
+        max-width: $width-tel;
         min-height: 247px;
         margin: 0 0 32px 0;
     }
@@ -1897,11 +1921,15 @@ fill: #F16D7F;
         margin: 0 0 32px 0;
     }
     .categories_box:last-child{
-        width: $width-tel;
+        min-height: 111px;
+        width: 100%;
+        max-width: $width-tel;
         margin: 0 0 64px;
     }
     .card_block {
         max-width: $width-tel;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
     .card{
         margin-bottom: 16.61px;
