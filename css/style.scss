@@ -797,6 +797,8 @@ svg{
 .title{
     width: 100%;
     max-width: $width-container;
+    padding: 0 16px 0 16px;
+    box-sizing: border-box;
     min-height: 148px;
     display: flex;
     justify-content: space-between;
@@ -1752,6 +1754,9 @@ fill: #F16D7F;
     color: #000000;
     padding-left: 23px;
 }
+
+
+
 @media (max-width: 768px){
     .menu_container {
         max-width: $width-tablet;
@@ -1801,6 +1806,11 @@ fill: #F16D7F;
         padding: 0 16px;
         box-sizing: border-box;
     }
+    .card_block_product {
+        max-width: $width-tablet;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
     .card{
         margin-bottom: 15px;
     }
@@ -1842,11 +1852,14 @@ fill: #F16D7F;
     .title {
         width: 100%;
         max-width: $width-tablet;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
     .filter {
-        max-width: 100%;
+        width: 100%;
         max-width: $width-tablet;
-        margin: 0 auto;
+        padding: 0 16px;
+        box-sizing: border-box;
         min-height: 81px;
         display: flex;
         justify-content: space-between;
@@ -1860,6 +1873,18 @@ fill: #F16D7F;
     .pagination {
         margin-top: 25.5px;
         margin-bottom: 63.5px;
+    }
+    .foto_img {
+        width: 466px;
+        height: 565px;
+    }
+    .foto_container {
+        padding-bottom: 29px;
+        padding-top: 29px;
+        height: 624px;
+    }
+    .description{
+        transform: translateY(0);
     }
 }
 
@@ -2018,4 +2043,38 @@ fill: #F16D7F;
         margin-top: 40.5px;
         margin-bottom: 64.5px;
     }  
+    .foto_container {
+        padding-bottom: 85px;
+        padding-top: 85px;
+        height: 454px;
+    }
+    .foto_img {
+        width: 374px;
+        height: 454px;
+    }
+    .foto_bg_left {
+        position: absolute;
+        left: 0;
+    }
+    .foto_bg_right {
+        position: absolute;
+        right: 0;
+    }
+    .description{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .card_tel{
+        margin-bottom: 0;
+    }
+    .card_2{
+        display: none;
+    }
+    .card_3{
+        display: block;
+    }
+    .card_block_product{
+        margin-bottom: 64px;
+    }
+
 }
