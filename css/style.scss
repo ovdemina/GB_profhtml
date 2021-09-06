@@ -848,16 +848,16 @@ svg{
     display: inline;
     font-family: "Lato";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #F16D7F;
     text-transform: uppercase;
 }
-.title_right li+li:before {
-    padding: 3px;
+.title_right a::after {
+    padding: 0 0 0 3px;
     color: #636363;
-    content: "/\00a0";
+    content: " /\00a0";
 }
 .title_right li a {
     font-family: "Lato";
@@ -1369,17 +1369,19 @@ svg{
 }
 .exit{
     display: block;
-    width: 18px;
-    height: 18px;
-    fill: #575757;
     position: absolute;
     right: 22px;
     top: 28px;
 }
-.exit:hover{
+.exit svg{
+    fill: #575757;
+    width: 18px;
+    height: 18px;
+}
+.exit:hover svg{
 fill: #F16D7F;
 }
-.exit:active{
+.exit:active svg{
     fill: black;
 }
 .cart_right{
@@ -1410,6 +1412,7 @@ fill: #F16D7F;
             line-height: 16px;
             color: black;
             box-sizing: border-box;
+            margin-bottom: 21px;
         }
         &_input{
             width: 360px;
@@ -1422,32 +1425,26 @@ fill: #F16D7F;
             line-height: 16px;
             color: black;
             box-sizing: border-box;
-            position: absolute;
-            z-index: -1;
-            left: -17.24px;
-            top: -13px;
-            &_state{
-                padding: 12px 0 16px 60px;
-            }
-            &_postcode{
-                padding: 12px 0 16px 110px;
-            }
+            position: relative;
         }
         &_label{
-            position: relative;
-            margin-top: 33.5px;
-            margin-bottom: 15.5px;
-            left: 17.24px;
+            position: absolute;
+            z-index: 2;
+            transition:transform 100ms ease;
+            transform:translateY(-20px);
+            top: 13px;
+            left: 20px;
             font-family: "Lato";
             font-style: normal;
             font-weight: 300;
             font-size: 13px;
             line-height: 16px;
             color: #222222;
+            background:white;
         }
         &_button{
             width: 101px;
-            margin-top: 25px;
+            margin-top: 5px;
             padding: 9px 13px 11px 14px;
             font-family: "Lato";
             font-style: normal;
@@ -1458,8 +1455,25 @@ fill: #F16D7F;
             text-transform: uppercase;
             border: 1px solid #A4A4A4;
             box-sizing: border-box;
+            background-color: transparent;
         }
     }
+}
+.input_adress{
+    position: relative;
+    line-height: 14px;
+    display: inline-block;
+    margin-bottom: 21px;
+}
+.cart_right_form_input:invalid + .cart_right_form_label{
+    transform: translateY(0);
+}
+.cart_right_form_input:focus{
+    border-color: #F16D7F;
+}
+.cart_right_form_input + .cart_right_form_label{
+      color: #222222;
+      transform: translateY(-20px);
 }
 .cart_right_form_input1::-webkit-input-placeholder {
     color:#B1B1B1;
