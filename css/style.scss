@@ -204,11 +204,24 @@ $width-tel: 375px;
 .page_right_lk:active svg{
     fill:red;
 }
-
+.page_right_basket{
+    position: relative;
+}
 .page_right_basket svg{
     width: 32px;
     height: 29px;
     padding-left: 33px;
+}
+.page_right_basket span{
+    display: block;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-color: #F16D7F;
+    border-radius: 50%;
+    color: #FFFFFF;
+    left: 56px;
+    top: -6px;
 }
 .page_right_basket:hover svg{
     fill:orange;
@@ -380,7 +393,6 @@ svg{
         position: relative;
         display: flex;
         flex-direction: column;
-        text-decoration: none;
     }
     &_text{
         text-align: left;
@@ -420,6 +432,11 @@ svg{
         line-height: 19px;
         color: #F16D7F;
     }
+}
+.card_one a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 .card_title_top{
     font-family: "Lato";
@@ -498,6 +515,7 @@ svg{
 }
 .card_button{
     display: block;
+    position: relative;
     width: 211px;
     background-color: #fff;
     border: 2px solid #F26376;
@@ -513,6 +531,7 @@ svg{
     padding: 14.5px;
     &_none{
         display: none;
+        position: absolute;
         justify-content: center;
         align-items: center;
         width: 160px;
@@ -533,6 +552,11 @@ svg{
 .card_button:hover {
     background-color: #F26376;
     color: #fff;
+}
+.card_button:active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 .card_button_none svg {
     fill: #fff;
@@ -1315,9 +1339,6 @@ svg{
     line-height: 22px;
     color: #656565;
 }
-.cart_button a{
-    text-decoration: none;
-}
 .cart_button_btn{
     display: block;
     padding: 17px 40px;
@@ -1426,8 +1447,9 @@ fill: #F16D7F;
             color: #222222;
         }
         &_button{
+            width: 101px;
             margin-top: 25px;
-            padding: 10px 14.2px 12px 15.21px;
+            padding: 9px 13px 11px 14px;
             font-family: "Lato";
             font-style: normal;
             font-weight: 300;
@@ -1575,9 +1597,6 @@ fill: #F16D7F;
 }
 .space{
     padding-left: 20px;
-}
-.cart_right_checkout a{
-    text-decoration: none;
 }
 .registration_container{
     margin: 0 auto;

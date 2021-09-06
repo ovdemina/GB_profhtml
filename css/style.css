@@ -263,10 +263,26 @@
   fill: red;
 }
 
+.page_right_basket {
+  position: relative;
+}
+
 .page_right_basket svg {
   width: 32px;
   height: 29px;
   padding-left: 33px;
+}
+
+.page_right_basket span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  color: #FFFFFF;
+  left: 56px;
+  top: -6px;
 }
 
 .page_right_basket:hover svg {
@@ -516,7 +532,6 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-decoration: none;
 }
 
 .card_text {
@@ -559,6 +574,17 @@ svg {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.card_one a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card_title_top {
@@ -659,6 +685,7 @@ svg {
 
 .card_button {
   display: block;
+  position: relative;
   width: 211px;
   background-color: #fff;
   border: 2px solid #F26376;
@@ -677,6 +704,7 @@ svg {
 
 .card_button_none {
   display: none;
+  position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -704,6 +732,12 @@ svg {
 .card_button:hover {
   background-color: #F26376;
   color: #fff;
+}
+
+.card_button:active {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
 
 .card_button_none svg {
@@ -1732,10 +1766,6 @@ svg {
   color: #656565;
 }
 
-.cart_button a {
-  text-decoration: none;
-}
-
 .cart_button_btn {
   display: block;
   padding: 17px 40px;
@@ -1874,8 +1904,9 @@ svg {
 }
 
 .cart_right_form_button {
+  width: 101px;
   margin-top: 25px;
-  padding: 10px 14.2px 12px 15.21px;
+  padding: 9px 13px 11px 14px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -2046,10 +2077,6 @@ svg {
 
 .space {
   padding-left: 20px;
-}
-
-.cart_right_checkout a {
-  text-decoration: none;
 }
 
 .registration_container {
