@@ -1288,21 +1288,22 @@ svg{
     fill: #ef605b;
 }
 .cart{
-    width: 100%;
+    width: 100% - (2*$padding);
     max-width: $width-container;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 96px;
     &_item{
+        width: 100%;
         display: flex;
         margin-bottom: 40px;
         min-height: 306px;
         position: relative;
         box-shadow: 20px 20px 16px rgba(0, 0, 0, 0.1);
         &_description{
-            width: 390px;
+            width: 100%;
+            max-width: 390px;
             display: flex;
             flex-direction: column;
             padding: 22px 22px 62px 31px; 
@@ -1334,6 +1335,16 @@ svg{
         margin-top: 72.5px;
         margin-bottom: 128.5px;
     }
+    .cart_left{
+        width: 100%;
+        max-width: 652px;
+    }
+}
+.cart_item img{
+    width: 100%;
+    height: 100%;
+    max-width: 262px;
+    max-height: 306px;
 }
 .quantity{
     width: 44px;
@@ -1395,11 +1406,17 @@ fill: #F16D7F;
     fill: black;
 }
 .cart_right{
+    width: 100%;
+    max-width: 358px;
     display: flex;
     flex-direction: column;
-    &_form{
+    &_form{   
         display: flex;
         flex-direction: column;
+        &_cont{
+            width: 360px;
+            
+        }
         &_title{
             font-family: "Lato";
             font-style: normal;
@@ -1412,7 +1429,8 @@ fill: #F16D7F;
         }
         &_input1{
             display: block;
-            width: 360px;
+            width: 100%;
+            max-width: 358px;
             border: 1px solid #A4A4A4;
             padding: 13px 0 16px 17.24px;
             font-family: "Lato";
@@ -1425,7 +1443,8 @@ fill: #F16D7F;
             margin-bottom: 21px;
         }
         &_input{
-            width: 360px;
+            width: 100%;
+            max-width: 358px;
             border: 1px solid #A4A4A4;
             padding: 12px 0 16px 17px;
             font-family: "Lato";
@@ -1555,7 +1574,8 @@ fill: #F16D7F;
 }
 .cart_right_checkout{
     display: block;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     padding: 39px 34px 42px 34px;
     background-color: #F5F3F3;
     margin-top: 57.5px;

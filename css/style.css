@@ -1694,7 +1694,7 @@ svg {
 }
 
 .cart {
-  width: 100%;
+  width: 96%;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1702,13 +1702,12 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 96px;
 }
 
 .cart_item {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1720,7 +1719,8 @@ svg {
 }
 
 .cart_item_description {
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1762,6 +1762,18 @@ svg {
           justify-content: space-between;
   margin-top: 72.5px;
   margin-bottom: 128.5px;
+}
+
+.cart .cart_left {
+  width: 100%;
+  max-width: 652px;
+}
+
+.cart_item img {
+  width: 100%;
+  height: 100%;
+  max-width: 262px;
+  max-height: 306px;
 }
 
 .quantity {
@@ -1834,6 +1846,8 @@ svg {
 }
 
 .cart_right {
+  width: 100%;
+  max-width: 358px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1853,6 +1867,10 @@ svg {
           flex-direction: column;
 }
 
+.cart_right_form_cont {
+  width: 360px;
+}
+
 .cart_right_form_title {
   font-family: "Lato";
   font-style: normal;
@@ -1866,7 +1884,8 @@ svg {
 
 .cart_right_form_input1 {
   display: block;
-  width: 360px;
+  width: 100%;
+  max-width: 358px;
   border: 1px solid #A4A4A4;
   padding: 13px 0 16px 17.24px;
   font-family: "Lato";
@@ -1881,7 +1900,8 @@ svg {
 }
 
 .cart_right_form_input {
-  width: 360px;
+  width: 100%;
+  max-width: 358px;
   border: 1px solid #A4A4A4;
   padding: 12px 0 16px 17px;
   font-family: "Lato";
@@ -2038,7 +2058,8 @@ svg {
 
 .cart_right_checkout {
   display: block;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   padding: 39px 34px 42px 34px;
   background-color: #F5F3F3;
   margin-top: 57.5px;
