@@ -1,6 +1,7 @@
 $width-container: 1140px;
 $width-tablet: 768px;
 $width-tel: 375px;
+$padding: 2%;
 
 @media (max-width: 768px){
     .menu_container {
@@ -9,6 +10,9 @@ $width-tel: 375px;
     .banner{
         height: 367.57px;
         margin-bottom: 19.95px;
+        &_container{
+            height: 367.57px;
+        }
         &_top{
             font-size: 44px;
             line-height: 53px;
@@ -31,7 +35,6 @@ $width-tel: 375px;
     }
     .categories {
         max-width: $width-tablet;
-        padding: 0 16px;
         box-sizing: border-box;
     }
     .categories_box {
@@ -51,7 +54,6 @@ $width-tel: 375px;
     }
     .card_block {
         max-width: $width-tablet;
-        padding: 0 16px;
         box-sizing: border-box;
     }
     .card_block_product {
@@ -75,7 +77,6 @@ $width-tel: 375px;
         margin: 48px 0 0 0;
     }
     .subscribe_container {
-        width: 100%;
         max-width: $width-tablet;
         flex-direction: column;
     }
@@ -92,21 +93,17 @@ $width-tel: 375px;
         margin-bottom: 140px;
     }
     .copyright_container {
-        width: 100%;
         max-width: $width-tablet;
-        padding: 0 16px;
         box-sizing: border-box;
     }
     .title {
-        width: 100%;
+        width: 100% - (2*$padding);
         max-width: $width-tablet;
-        padding: 0 16px;
         box-sizing: border-box;
     }
     .filter {
-        width: 100%;
+        width: 100% - (2*$padding);
         max-width: $width-tablet;
-        padding: 0 16px;
         box-sizing: border-box;
         min-height: 81px;
         display: flex;
@@ -137,8 +134,18 @@ $width-tel: 375px;
 }
 
 
-
-
+@media (max-width: 500px){
+    .banner_left{
+        width: 0%;
+        background-image: none;
+    }
+    .banner_right {
+        width: 100%;
+    }
+    .card_box{
+        justify-content: center;
+    }
+}
 
 @media (max-width: 375px){
     .menu_container {
@@ -178,14 +185,11 @@ $width-tel: 375px;
         height: 61px;
     }
     .categories {
-        width: 100%;
         max-width: $width-tel;
-        padding: 0 16px;
         box-sizing: border-box;
         margin: 0 auto;
     }
     .categories_box {
-        width: 100%;
         max-width: $width-tel;
         min-height: 247px;
         margin: 0 0 32px 0;
@@ -201,8 +205,6 @@ $width-tel: 375px;
     }
     .card_block {
         max-width: $width-tel;
-        padding: 0 16px;
-        box-sizing: border-box;
     }
     .card{
         margin-bottom: 16.61px;
