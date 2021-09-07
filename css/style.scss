@@ -370,9 +370,10 @@ svg{
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
     &_product{
         text-align: center;
-        width: 100%;
+        width: 100% - (2*$padding);
         max-width: $width-container;
         margin: 0 auto;
         display: flex;
@@ -380,6 +381,7 @@ svg{
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 128px;
+        box-sizing: border-box;
     }
 }
 .card{
@@ -605,7 +607,7 @@ svg{
         max-width: $width-container;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -823,9 +825,8 @@ svg{
     background-color: #F16D7F;
 }
 .title{
-    width: 100%;
+    width: 100% - (2*$padding);
     max-width: $width-container;
-    padding: 0 16px 0 16px;
     box-sizing: border-box;
     min-height: 148px;
     display: flex;
@@ -881,6 +882,7 @@ svg{
 .filter{
     max-width: 63%;
     min-height: 132px;
+    padding-left: $padding;
     align-self: flex-start;
     display: block;
     display: flex;
@@ -1167,6 +1169,8 @@ svg{
 }
 .description{
     width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
     max-width: $width-container;
     margin: 0 auto;
     display: flex;
