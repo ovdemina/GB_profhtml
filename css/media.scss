@@ -112,8 +112,8 @@ $padding: 2%;
         margin-bottom: 63.5px;
     }
     .foto_img {
-        width: 100%;
-        height: 100%;
+        max-width: 466px;
+        height: 565px;
     }
     .foto_container {
         padding-bottom: 29px;
@@ -146,6 +146,24 @@ $padding: 2%;
                 margin-right: 15px;
             }
         }
+    }
+    .registration_title{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration_subtitle{
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 32px;
+        margin-bottom: 22px;
+    }
+    .registration_list{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration_list li {
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 
@@ -201,7 +219,13 @@ $padding: 2%;
     }
     .cart_item img{
         max-width: 180px;
-
+    }
+    .registration_container {
+        flex-direction: column;
+        margin-bottom: 100.24px;
+    }
+    .registration_form {
+        margin-bottom: 40px;
     }
 }
 
@@ -454,5 +478,8 @@ $padding: 2%;
     .quantity:-ms-input-placeholder {
         font-size: 10px;
         line-height: 12px;
+    }
+    .registration_form_input {
+        width: 100%;
     }
 }

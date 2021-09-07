@@ -1505,8 +1505,7 @@ svg {
 
 .foto_img {
   display: block;
-  width: 597px;
-  height: 724px;
+  max-width: 597px;
   margin: 0 auto;
 }
 
@@ -2136,10 +2135,10 @@ svg {
 }
 
 .registration_container {
+  width: 96%;
+  max-width: 1140px;
   margin: 0 auto;
   margin-top: 64px;
-  width: 100%;
-  max-width: 1140px;
   margin-bottom: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2147,12 +2146,11 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .registration_form {
   display: block;
+  margin-right: 22px;
 }
 
 .registration_form_text {
@@ -2170,13 +2168,15 @@ svg {
   display: block;
   width: 360px;
   margin-bottom: 20px;
-  padding: 13px 0 16px 17px;
+  padding: 12.5px 0 15.5px 17px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #222222;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .registration_form_submit {
@@ -2192,6 +2192,8 @@ svg {
   color: #FFFFFF;
   border: 1px solid #F16D7F;
   text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .registration_form_note {

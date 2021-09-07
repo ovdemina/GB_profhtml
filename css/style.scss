@@ -1144,8 +1144,7 @@ svg{
 }
 .foto_img{
     display: block;
-    width: 597px;
-    height: 724px;
+    max-width: 597px;
     margin: 0 auto;
 }
 .foto_icon{
@@ -1415,7 +1414,6 @@ fill: #F16D7F;
         flex-direction: column;
         &_cont{
             width: 360px;
-            
         }
         &_title{
             font-family: "Lato";
@@ -1642,17 +1640,17 @@ fill: #F16D7F;
     padding-left: 20px;
 }
 .registration_container{
+    width: 100% - (2*$padding);
+    max-width: $width-container;
     margin: 0 auto;
     margin-top: 64px;
-    width: 100%;
-    max-width: $width-container;
     margin-bottom: 96px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .registration_form{
     display: block;
+    margin-right: 22px;
     &_text{
         display: block;
         font-family: "Lato";
@@ -1667,13 +1665,14 @@ fill: #F16D7F;
         display: block;
         width: 360px;
         margin-bottom: 20px;
-        padding: 13px 0 16px 17px;
-       font-family: "Lato";
+        padding: 12.5px 0 15.5px 17px;
+        font-family: "Lato";
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
         line-height: 16px;
         color: #222222;
+        box-sizing: border-box;
     }
     &_submit{
         display: block;
@@ -1688,6 +1687,7 @@ fill: #F16D7F;
         color: #FFFFFF;
         border: 1px solid #F16D7F;
         text-transform: uppercase;
+        box-sizing: border-box;
     }
     &_note{
         max-width: 360px;
