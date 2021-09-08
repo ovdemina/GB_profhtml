@@ -112,8 +112,8 @@ $padding: 2%;
         margin-bottom: 63.5px;
     }
     .foto_img {
-        max-width: 466px;
-        height: 565px;
+        max-width: 80%;
+        height: 80%;
     }
     .foto_container {
         padding-bottom: 29px;
@@ -481,5 +481,12 @@ $padding: 2%;
     }
     .registration_form_input {
         width: 100%;
+    }
+    .search_input:focus{
+        border: 2px solid blue;
+        width: 130px;
+        min-height: 30px;
+        border: 2px solid #fff;
+        outline: 3px solid blue;
     }
 }
