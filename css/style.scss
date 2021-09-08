@@ -922,10 +922,10 @@ svg{
 }
 #filter {
     display: none;
-  }
+}
 #filter:checked ~ .filter_list {
     display: block;
-  }
+}
 .filter_button{
     display: block;
     width: 100%;
@@ -972,8 +972,11 @@ svg{
     z-index: 10;
     background-color: #FFFFFF;
     width: 360px;
-    height: 531px;
-    margin-top: 600px;
+    height: auto;
+    padding-left: 22px;
+    top: 90px;
+    left: 0;
+    box-sizing: border-box;
     &_item {
         width: 100%;
         margin: 0 0 18px 0;
@@ -988,31 +991,48 @@ svg{
         position: relative;
     }
 }
-.filter_list_item:before {
+/*.filter_list_item:first-child:before {
     content: "";
     display: block;
     width: 5px;
     height: 37px;
     background-color: #EF5B70;
     position: absolute;
-    bottom: -1px;
+    bottom: 493px;
     left: 0;
-}
-.filter_list_item a {
+}*/
+
+.summary {
     text-transform: uppercase;
     color: #EF5B70;
-    text-decoration: none;
 }
-.filter_list_item:hover:before {
+.summary {
+    position: relative;
+}
+summary{
+    list-style: none;
+    cursor: pointer;
+}
+.summary:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 37px;
+    background-color: #EF5B70;
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+}
+.summary:hover:before {
     background-color: red;
 }
-.filter_list_item:hover a {
+.summary:hover {
     color: red;
 }
-.filter-list-item:active:before {
+.summary:active:before {
     background-color: #ccc;
 }
-.filter_list_item:active a {
+.summary:active {
     color: #ccc;
 }
 .filter_sublist {
@@ -1027,6 +1047,7 @@ svg{
         font-weight: normal;
         font-size: 14px;
         line-height: 16.8px;
+        color: #6F6E6E;
     }
 }
 .filter_sublist_item:last-child {
@@ -1034,6 +1055,8 @@ svg{
 } 
 .filter_sublist_item a {
     color: #6F6E6E;
+    text-decoration: none;
+    text-transform: capitalize;
     text-decoration: none;
 }
  .filter_sublist_item:hover a {
