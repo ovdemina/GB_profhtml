@@ -1289,8 +1289,12 @@ svg {
   z-index: 10;
   background-color: #FFFFFF;
   width: 360px;
-  height: 531px;
-  margin-top: 600px;
+  height: auto;
+  padding-left: 22px;
+  top: 90px;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter_list_item {
@@ -1308,36 +1312,54 @@ svg {
   position: relative;
 }
 
-.filter_list_item:before {
+/*.filter_list_item:first-child:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 37px;
+    background-color: #EF5B70;
+    position: absolute;
+    bottom: 493px;
+    left: 0;
+}*/
+.summary {
+  text-transform: uppercase;
+  color: #EF5B70;
+}
+
+.summary {
+  position: relative;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.summary:before {
   content: "";
   display: block;
   width: 5px;
   height: 37px;
   background-color: #EF5B70;
   position: absolute;
-  bottom: -1px;
-  left: 0;
+  bottom: -12px;
+  left: -12px;
 }
 
-.filter_list_item a {
-  text-transform: uppercase;
-  color: #EF5B70;
-  text-decoration: none;
-}
-
-.filter_list_item:hover:before {
+.summary:hover:before {
   background-color: red;
 }
 
-.filter_list_item:hover a {
+.summary:hover {
   color: red;
 }
 
-.filter-list-item:active:before {
+.summary:active:before {
   background-color: #ccc;
 }
 
-.filter_list_item:active a {
+.summary:active {
   color: #ccc;
 }
 
@@ -1356,6 +1378,7 @@ svg {
   font-weight: normal;
   font-size: 14px;
   line-height: 16.8px;
+  color: #6F6E6E;
 }
 
 .filter_sublist_item:last-child {
@@ -1364,6 +1387,8 @@ svg {
 
 .filter_sublist_item a {
   color: #6F6E6E;
+  text-decoration: none;
+  text-transform: capitalize;
   text-decoration: none;
 }
 
