@@ -293,6 +293,16 @@
   fill: red;
 }
 
+.page_right_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page_right_none {
+  display: none;
+}
+
 button {
   background-color: transparent;
   border: none;
