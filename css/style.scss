@@ -229,6 +229,12 @@ $padding: 2%;
 .page_right_basket:active svg{
     fill:red;
 }
+.page_right_flex{
+    display: flex;
+}
+.page_right_none {
+    display: none;
+}
 button{
     background-color: transparent;
     border: none;

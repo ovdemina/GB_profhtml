@@ -543,5 +543,13 @@
     border: 2px solid #fff;
     outline: 3px solid blue;
   }
+  .page_right_none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page_right_none svg {
+    fill: #5D5D5D;
+  }
 }
 /*# sourceMappingURL=media.css.map */
